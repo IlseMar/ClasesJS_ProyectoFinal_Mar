@@ -4,6 +4,8 @@ function cargarResumenCompra() {
   let listaProductos = document.getElementById("listaProductos");
   let sumaTotal = 0;
 
+  listaProductos.innerHTML = "";
+
   let tituloLista = document.createElement("h2");
   tituloLista.innerText = "Estos son todos tus productos seleccionados";
   listaProductos.appendChild(tituloLista);
@@ -70,7 +72,11 @@ document.getElementById("finalizarCompra").addEventListener("click", () => {
     'input[name="metodoPago"]:checked'
   );
   if (!metodoSeleccionado) {
-    alert("Por favor, selecciona un método de pago.");
+    Swal.fire({
+      title: "Por favor, selecciona un método de pago",
+      icon: "info",
+      timer: 3000,
+    });
     return;
   }
 
@@ -78,13 +84,25 @@ document.getElementById("finalizarCompra").addEventListener("click", () => {
   let email = document.getElementById("email").value;
 
   if (!nombre || !email) {
-    alert("Por favor, completa todos los campos.");
+    Swal.fire({
+      title: "Por favor, completa todos los campos.",
+      icon: "info",
+      timer: 3000,
+    });
     return;
   }
 
-  alert(
-    `Compra finalizada con método de pago: ${metodoSeleccionado.value}. ¡Gracias por tu compra, ${nombre}!`
-  );
+  Swal.fire({
+    title: `
+    ¡Gracias por tu compra, ${nombre}!
+    En breve te llegará más información de entrega a ${email}`,
+    icon: "success",
+    timer: 5000,
+    confirmButtonText: "Aceptar",
+    didClose: () => {
+      window.location.href = "../index.html";
+    },
+  });
 
   localStorage.removeItem("carrito");
 
@@ -94,5 +112,4 @@ document.getElementById("finalizarCompra").addEventListener("click", () => {
   document.getElementById("email").value = "";
   let radios = document.getElementsByName("metodoPago");
   radios.forEach((radio) => (radio.checked = false));
-  window.location.href = "../index.html";
 });

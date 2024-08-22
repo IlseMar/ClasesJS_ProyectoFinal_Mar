@@ -117,3 +117,22 @@ const agregarAlCarrito = (id, index) => {
     });
   }
 };
+
+const irAlCarrito = () => {
+  const btnCarrito = document.querySelector(".btnCarrito");
+  btnCarrito.addEventListener("click", () => {
+    if (carrito.length === 0) {
+      Swal.fire({
+        title: "Carrito vacío",
+        text: "¡Aún no tienes productos en tu carrito!",
+        icon: "info",
+        position: "center",
+        confirmButtonText: "Aceptar",
+        timer: 3000,
+      });
+    } else {
+      window.location.href = "./carrito.html";
+    }
+  });
+};
+irAlCarrito();

@@ -119,25 +119,6 @@ const sumarCantidad = (id) => {
   }
 };
 
-// const finalizarCompra = () => {
-//   let finalizarCompraBtn = document.querySelector("#finalizarCompra");
-//   finalizarCompraBtn.addEventListener("click", () => {
-//// nuevo HTML con:
-//// - lista con productos agregados
-//// - suma total
-//-formulario de datos (los mismos que "contáctame")
-//-simular envio de correo
-//-selector de casilla:
-//---lista con: paypal/tarjeta/contraentrega
-//-boton: finalizar compra
-//- ventana emergente:
-//---"Compra finalizada"
-//---"no. de referencia"
-//--- confirmaremos la fecha de entrega a tu correo
-//---gracias!
-//   });
-// };
-
 const borrarTodo = () => {
   let eliminarTodoBtn = document.querySelector("#eliminar-todo");
   eliminarTodoBtn.addEventListener("click", () => {
@@ -153,8 +134,11 @@ const borrarTodo = () => {
         Swal.fire({
           title: "Se han eliminado todos los productos",
           icon: "info",
+          timer: 3000,
+          didClose: () => {
+            window.location.href = "../index.html";
+          },
         });
-
         let carritoContainer = document.querySelector(".carrito-container");
         carritoContainer.innerHTML = "";
         let totalElement = document.querySelector("#total");
