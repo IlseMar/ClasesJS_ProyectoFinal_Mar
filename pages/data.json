@@ -1,0 +1,54 @@
+{
+  "fundas": [
+    {
+      "id": 1,
+      "tipoDeProducto": "funda",
+      "tipoDeDiseño": "Diseños básicos",
+      "precioBase": 100,
+      "descripcion": "Fundas para celular con diseños personalizados sencillos, con pocos detalles",
+      "image": "../assets/img/fundas/chromatica-funda-basica.png"
+    },
+    {
+      "id": 2,
+      "tipoDeProducto": "funda",
+      "tipoDeDiseño": "Diseños intermedios",
+      "precioBase": 200,
+      "descripcion": "Fundas para celular con diseños personalizados, con detalles intermedios",
+      "image": "../assets/img/fundas/chromatica-funda-inter.jpeg"
+    },
+    {
+      "id": 3,
+      "tipoDeProducto": "funda",
+      "tipoDeDiseño": "Super diseños",
+      "precioBase": 300,
+      "descripcion": "Fundas para celular con diseños personalizados más complejos, con más detalles",
+      "image": "../assets/img/fundas/chromatica-funda-super.jpeg"
+    }
+  ],
+  "espejos": [
+    {
+      "id": 4,
+      "tipoDeProducto": "espejo",
+      "tipoDeDiseño": "Diseños básicos",
+      "precioBase": 100,
+      "descripcion": "Espejos con diseños personalizados sencillos, con pocos detalles",
+      "image": "../assets/img/espejos/chromatica-espejo-basico.jpeg"
+    },
+    {
+      "id": 5,
+      "tipoDeProducto": "espejo",
+      "tipoDeDiseño": "Diseños intermedios",
+      "precioBase": 200,
+      "descripcion": "Espejos con diseños personalizados, con detalles intermedios",
+      "image": "../assets/img/espejos/chromatica-espejo-inter.jpeg"
+    },
+    {
+      "id": 6,
+      "tipoDeProducto": "espejo",
+      "tipoDeDiseño": "Super diseños",
+      "precioBase": 300,
+      "descripcion": "Espejos con diseños personalizados más complejos, con más detalles",
+      "image": "../assets/img/espejos/chromatica-espejo-super.jpeg"
+    }
+  ]
+}

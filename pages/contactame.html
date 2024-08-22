@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logos/logo-1.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Finaliza tu compra</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo-nav">CHORMATICA</h1>
+      <nav class="elementos-nav">
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./chromatica.html">CHORMATICA</a></li>
+          <li><a href="./fundas.html">FUNDAS</a></li>
+          <li><a href="./espejos.html">ESPEJOS</a></li>
+          <!-- <li><a href="./carrito.html">CARRITO</a></li>
+          <li><a href="#">CONTACTAME</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="caja-principal">
+        <section class="items">
+          <h1>Resumen de tu compra</h1>
+          <ul id="listaProductos"></ul>
+          <p>Total: $<span id="sumaTotal"></span></p>
+
+          <!-- <h2>Elige tu método de pago</h2> -->
+          <form id="formPago"></form>
+
+          <button type="button" id="finalizarCompra">Finalizar compra</button>
+        </section>
+      </section>
+      <!-- <section class="caja-principal">
+                <section class="items">
+                    <h1 class="titulo"> Contáctame</h1>
+                    <h2 class="correo">vamaga@gmail.com</h2>
+                    <input class="boton-enviar" type="submit" value="Enviar">
+                    <section class="caja-contacto">
+                        <form class= "caja-formulario" action="">
+                            <fieldset class="formulario">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="asunto">Asunto</label>
+                                <input type="text" id="asunto" name="asunto">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                            </fieldset>
+                </section>
+                </section>
+            </section> -->
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="logos">
+          <a
+            style="text-decoration: none"
+            class="link-logos"
+            href="https://www.instagram.com/chromati.ca/"
+            target="_blank"
+          >
+            <img src="../assets/img/logos/Instagram.png" alt="Instagram" />
+          </a>
+          <a
+            style="text-decoration: none"
+            class="link-logos"
+            href="https://www.facebook.com/profile.php?id=100076318662834&mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <img src="../assets/img/logos/Facebook.png" alt="facebook" />
+          </a>
+          <a
+            style="text-decoration: none"
+            class="link-logos"
+            href="https://www.tiktok.com/@chromati.ca?pid=video_embed&referer_video_id=7347371493220764934&videoId=7347371493220764934&type=video&referer_url=127.0.0.1:5500/index.html&refer=embed&embed_source=121374463,121433650,121404359,121331973,120811592,120810756,72248228;null;embed_name"
+            target="_blank"
+          >
+            <img src="../assets/img/logos/TikTok.png" alt="tiktok" />
+          </a>
+        </div>
+      </section>
+    </footer>
+    <script src="../finalizarCompra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

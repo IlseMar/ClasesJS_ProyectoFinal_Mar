@@ -1,0 +1,24 @@
+.container-fluid{
+    padding: 0;
+    object-fit: cover;
+}
+
+.carousel-inner{
+    height: 680px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-right: 0;
+    background-position: bottom;
+    .carousel-item{
+        margin: 0;
+        background-position: bottom;
+        img{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            object-fit: cover;
+        }
+    }
+}

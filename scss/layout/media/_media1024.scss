@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+    .productos {
+        height: 550px;
+        .cajas-productos{
+            height: 350px;
+            .retratos {
+                height: 350px;
+            }
+        }
+        .espejos {
+            height: 350px;
+        }
+        .fundas {
+            height: 350px;
+        }
+        .tarjeteros {
+            height: 350px;
+        }
+    }
+    .tiktok {
+        height: 750px;
+        .caja-tiktok {
+            height: 500px;
+            .tt1{
+                .tiktok-embed {
+                    grid-template-columns: 320px;
+                    height: 520px;
+                }
+            }
+            .tt2{
+                .tiktok-embed {
+                    grid-template-columns: 320px;
+                    height: 520px;
+                }
+            }
+            .tt3{
+                .tiktok-embed {
+                    grid-template-columns: 320px;
+                    height: 520px;
+                }
+            }
+        }
+    }
+    .caja-compartir {
+        width: 100%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        .fondo-blanco {
+            grid-column: 3/9;
+        }
+    }
+    
+}
+

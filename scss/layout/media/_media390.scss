@@ -1,0 +1,449 @@
+@media (max-width: 390px) {
+    header {
+        height: 100px;
+        .titulo-nav {
+            font-size: 20px;
+            padding: 20px 0px 10px 0px;
+            letter-spacing: 4px;
+            justify-content: space-between;
+        }
+        .elementos-nav {
+            a {
+            font-size: 9px;
+            letter-spacing: 2px;
+            font-weight: 500;}
+            ul{
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    }
+    .container-fluid {
+        height: 200px;
+        margin-bottom: 60px;
+        .carousel-banner{
+            height:200px;
+            margin-bottom: 60px;
+            .carousel-inner {
+                margin-bottom: 60px;
+                padding: 0;
+                width: 100%;
+                height: 200px;
+                .carousel-item {
+                    img {
+                        height: 200px;
+                        object-fit: cover;
+                        background-position: center center;
+                    }
+                }
+            }
+        }
+    }
+    .productos {
+        height: 200px;
+        margin-top: 50px;
+        align-self: center;
+        margin-bottom: 30px;
+        .titulo-productos {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .cajas-productos {
+            height: 120px;
+            grid-template-rows: 120px;
+            padding: 0px 10px;
+            gap: .625rem;
+            .retratos {
+                grid-template-rows: 60px 60px;
+                .img1 {
+                    grid-row: 1/3;
+                }
+                .titulo1 {
+                    grid-row: 1/3;
+                    align-content: flex-end;
+                }
+                h1 {
+                    font-size: 15px;
+                }
+            }
+            .espejos {
+                grid-template-rows: 60px 60px;
+                .img2 {
+                    grid-row: 1/3;
+                }
+                .titulo2 {
+                    grid-row: 1/3;
+                    align-content: flex-end;
+                }
+                h1 {
+                    font-size: 15px;
+                }
+            }
+            .fundas {
+                grid-template-rows: 60px 60px;
+                .img3 {
+                    grid-row: 1/3;
+                }
+                .titulo3 {
+                    grid-row: 1/3;
+                    align-content: flex-end;
+                }
+                h1 {
+                    font-size: 15px;
+                }
+            }
+            .tarjeteros {
+                grid-template-rows: 60px 60px;
+                .img4 {
+                    grid-row: 1/3;
+                }
+                .titulo4 {
+                    grid-row: 1/3;
+                    align-content: flex-end;
+                }
+                h1 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .tiktok {
+        height: 250px;
+        margin-bottom: 100px;
+        .titulo-tiktok {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .caja-tiktok {
+            height: 250px;
+            grid-template-columns: 100px 100px 100px;
+            .tt1{
+                width: 100%;
+                .tiktok-embed {
+                    width: 100px;
+                    height: 250px;
+                    grid-template-columns: 100px;
+                }
+            }
+            .tt2{
+                width: 100%;
+                .tiktok-embed {
+                    width: 100px;
+                    height: 250px;
+                    grid-template-columns: 100px;
+                }
+            }
+            .tt3{
+                width: 100%;
+                .tiktok-embed {
+                    width: 100px;
+                    height: 250px;
+                    grid-template-columns: 100px;
+                }
+            }
+        }
+    }
+    .caja-compartir {
+        grid-template-rows: repeat(10, 1fr);
+        height: 250px;
+        background-size: cover;
+        margin-bottom: 30px;
+        .fondo-blanco {
+            grid-row: 4/8;
+            gap: 5px;
+            .obj1 {
+                padding-left: 2px;
+                padding-right: 2px;
+                font-size: 13px;
+                text-align: center;
+            }
+            .obj2 {
+                padding-left: 2px;
+                padding-right: 2px;
+                font-size: 13px;
+            }
+            .obj3 {
+                padding: 2px;
+                background-color: #E98270;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+                .boton-ig {
+                    font-family: "Gideon Roman", serif;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        height: 80px;
+        .logos {
+            justify-items: space-around;
+            a{
+                width: 40px;
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                padding: 5px;
+                width: 40px;
+            }
+        }
+    }
+    .boton-contacto{
+        button{
+            padding: 7px 7px 7px 8px;
+            font-family: "Gideon Roman", serif;
+            border-radius: 10px;
+            font-size: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 15px;
+            background-color: #ecb129c4;
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .sobre-mi {
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: -30px;
+        height: 500px;
+        .chromatica-texto {
+            grid-column: 1 / 2;
+            grid-row: 5 / 8;
+            margin: 25px;
+            margin-top: 40px;
+            margin-right: 12.5px;
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 8px;
+            }
+        }
+        .foto-chromatica {
+            grid-column: 2 / 3;
+            grid-row: 5/8;
+            margin: 25px;
+            margin-left: 12.5px;
+            height: 250px;
+            img {
+                height: 250px;
+            }
+        }
+        .foto-sobre-mi {
+            display: flex;
+            margin: 25px;
+            margin-right: 12.5px;
+            img {
+                height: 250px;
+            }
+        }
+        .sobre-mi-texto {
+            margin: 25px;
+            margin-left: 12.5px;
+            height: 220px;
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 8px;
+            }
+        }
+    }
+    .caja-fundas {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+        .producto1 {
+            img {
+                height: 150px;
+            }
+        }
+        .producto2 {
+            img {
+                height: 150px;
+                margin-top: -45px;
+            }
+        }
+        .producto3 {
+            img {
+                height: 150px;
+            }
+        }
+        .producto4 {
+            grid-column: 1 / 2;
+            grid-row: 2/4;
+            img {
+                height: 150px;
+                margin-top: 60px;
+            }
+        }
+        .producto5 {
+            grid-column: 2 / 3;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+            }
+        }
+        .producto6 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            img {
+                height: 150px;
+                margin-top: 60px;
+            }
+        }
+        .producto7 {
+            grid-column: 1 / 2;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+                margin-top: 105px;
+            }
+        }
+        .producto8 {
+            grid-column: 2/3;
+            grid-row: 4/6;
+            img {
+                height: 150px;
+                margin-top: 45px;
+            }
+        }
+        .producto9 {
+            grid-column: 3/4;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+                margin-top: 105px;
+            }
+        }
+    }
+    .caja-espejos {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+        .producto1 {
+            img {
+                height: 150px;
+            }
+        }
+        .producto2 {
+            img {
+                height: 150px;
+                margin-top: -45px;
+            }
+        }
+        .producto3 {
+            img {
+                height: 150px;
+            }
+        }
+        .producto4 {
+            grid-column: 1 / 2;
+            grid-row: 2/4;
+            img {
+                height: 150px;
+                margin-top: 60px;
+            }
+        }
+        .producto5 {
+            grid-column: 2 / 3;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+            }
+        }
+        .producto6 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            img {
+                height: 150px;
+                margin-top: 60px;
+            }
+        }
+        .producto7 {
+            grid-column: 1 / 2;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+                margin-top: 105px;
+            }
+        }
+        .producto8 {
+            grid-column: 2/3;
+            grid-row: 4/6;
+            img {
+                height: 150px;
+                margin-top: 45px;
+            }
+        }
+        .producto9 {
+            grid-column: 3/4;
+            grid-row: 3/5;
+            img {
+                height: 150px;
+                margin-top: 105px;
+            }
+        }
+    }
+    .caja-principal {
+        height: 250px;
+        margin: 0;
+        margin-bottom:60px;
+        .items {
+            height: 250px;
+            h1 {
+                margin-top: 15px;
+                font-family: "Gideon Roman", serif;
+                font-size: 25px;
+                text-align: center;
+            }
+            h2 {
+                font-family: "Gideon Roman", serif;
+                font-size: 10px;
+                text-align: center;
+                align-self: flex-start;
+                margin-top: 0;
+            }
+            .boton-enviar{
+                padding: 4.5px 8px;
+                border: 0;
+                border-radius: 100px;
+                margin-bottom: 20px;
+            }
+            .caja-contacto{
+                width: 100px;
+                .caja-formulario{
+                    width: 100px;
+                    .formulario {
+                        width: 100px;
+                        margin-top: -50px;
+                        height: 100px;
+                        input {
+                            width: 100px;
+                            height: 12px;
+                        }
+                        label {
+                            font-size: 10px;
+                        }
+                        textarea {
+                            width: 100px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

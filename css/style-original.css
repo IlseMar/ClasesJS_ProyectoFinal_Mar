@@ -1,0 +1,1767 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+/*-------------*/
+/*---INDEX---*/
+/*-------------*/
+
+/*HEADER*/
+/*header h1 {
+    font-family: "Gideon Roman", serif;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 170px;
+    width: 100%;
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+}
+
+nav ul li a {
+    font-family: "Gideon Roman", serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    display: flex;
+    width: 100%;
+}*/
+
+/*MAIN*/
+
+/*banner*/
+/*.carousel-inner {
+    height: 680px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.carousel-item {
+    margin: 0;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}*/
+
+/*.container-fluid {
+    padding: 0;
+}*/
+
+/*-----------------------------------------------*/
+/*seccion productos
+.productos {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    background-color: #02556f;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        "titulo-productos"
+        "cajas-productos"
+}
+
+.titulo-productos h2 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px;
+}
+
+.cajas-productos {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    background-color: #9b141b;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas:
+        "retratos espejos fundas tarjeteros";
+    align-self: self-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.retratos {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
+
+.img1 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    overflow: hidden;
+}
+
+aplicar
+.img1:hover{
+    transform: scale(1.4)
+
+.titulo1 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+}
+
+.retratos h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.espejos {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
+.espejos .img2 {
+    overflow: hidden
+}*/
+
+/*.img2 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.titulo2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    order: 2;
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+}
+
+.espejos h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+.fundas {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 20px;
+    object-fit: cover;
+}
+
+.img3 {
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    object-fit: cover;
+}
+
+.titulo3 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+}
+
+.fundas h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}
+
+.tarjeteros {
+    display: grid;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.img4 {
+
+    border-radius: 18% 5%;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    order: 1;
+    object-fit: cover;
+}
+
+.titulo4 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    order: 2;
+    background-color: rgba(220, 224, 228, 0.5);
+    overflow: hidden;
+}*
+
+.tarjeteros h1 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}/
+
+
+/*-----------------------------------------------*/
+/*seccion tiktok
+.tiktok {
+    width: 100%;
+    height: 780px;
+    display: grid;
+    background-color: #02556f;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        "titulo-tiktok"
+        "caja-ticktok";
+}
+
+.titulo-tiktok h2 {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px;
+}
+
+.caja-tiktok {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-color: #9b141b;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 540px;
+    grid-template-areas:
+        "tt1 tt2 tt3";
+    align-self: self-start;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.caja-tiktok article {
+    width: 100%;
+    height: 100%;
+}
+
+.tt1 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 320px;
+    grid-template-rows: 100%;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+.tt2 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 320px;
+    grid-template-rows: 100%;
+    object-fit: cover;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+.tt3 .tiktok-embed {
+    display: grid;
+    background-color: aqua;
+    height: 580px;
+    width: 100%;
+    grid-template-columns: 320px;
+    object-fit: cover;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%;
+    justify-content: center;
+}*/
+
+/*-----------------------------------------------*/
+/*seccion compartir*/
+
+/*.caja-compartir {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    background-image: url(../assets/img/banners/Banner.png);
+    background-size: cover;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-self: self-start;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-items: center;
+}*/
+/*position: relative
+
+.caja-compartir .fondo-blanco {
+    width: 100%;
+}
+
+.fondo-blanco {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 174, 189, 0.9);
+    grid-column: 4/8;
+    grid-row: 3/7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.obj1 {
+    font-family: "Luxurious Roman", serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.obj2 {
+    font-family: "Luxurious Roman", serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.obj3 {
+    padding: 5px;
+    font-size: 20px;
+    background-color: #E98270;
+    display: flex;
+}
+
+.obj3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.boton-ig {
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+}*/
+
+/*-----------------------------------------------*/
+/*boton*/
+/*.boton-contacto button {
+    padding: 10px 10px 10px 40px;
+    font-size: 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #ecb129c4;
+}*/
+
+/*-----------------------------------------------*/
+/*FOOTER*/
+/*.footer {
+    background-color: #02556f;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    padding: 5px;
+}
+
+.logos a {
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+}*/
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CHROMÁTICA+++*/
+
+/*.sobre-mi {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10, 1fr);
+}*/
+
+/*.sobre-mi img {
+    width: 100%;
+}
+
+.sobre-mi .foto-sobre-mi {
+    grid-column: 1 / 2;
+    grid-row: 1 /7;
+    object-fit: cover;
+}
+
+.foto-sobre-mi {
+    display: flex;
+    margin: 80px;
+    margin-right: 40px;
+}
+
+.foto-sobre-mi img {
+    object-fit: cover;
+}
+
+.sobre-mi .sobre-mi-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+}
+
+.sobre-mi-texto {
+    display: flex;
+    margin: 80px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.sobre-mi h2 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 50px;
+}
+
+.sobre-mi p {
+    font-family: "Luxurious Roman", serif;
+    font-size: 20px;
+}
+
+.sobre-mi .chromatica-texto {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 / 2;
+    grid-row: 6 / 11;
+}
+
+.chromatica-texto {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    margin-right: 40px;
+}
+
+.chromarica-texto h2 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 50px;
+}
+
+.chromatica-texto p {
+    font-family: "Luxurious Roman", serif;
+    font-size: 20px;
+}
+
+.sobre-mi .foto-chromatica {
+    grid-column: 2 / 3;
+    grid-row: 5 / 11;
+}
+
+.foto-chromatica {
+    display: flex;
+    margin: 80px;
+    margin-left: 40px;
+}
+
+.foto-chromatica img {
+    object-fit: cover;
+}*/
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA FUNDAS+++*/
+
+/*.caja-fundas {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 120px);
+}
+
+.caja-fundas img {
+    width: 100%;
+}
+
+.caja-fundas .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.producto1 {
+    display: flex;
+    margin: 30px 15px 15px 30px;
+}
+
+.producto1 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+
+.producto2 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto2 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.producto3 {
+    display: flex;
+    margin: 30px 30px 15px 15px;
+}
+
+.producto3 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+}
+
+.producto4 {
+    display: flex;
+    margin: 15px 15px 15px 30px;
+}
+
+.producto4 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+}
+
+.producto5 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto5 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+}
+
+.producto6 {
+    display: flex;
+    margin: 15px 30px 15px 15px;
+}
+
+.producto6 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+}
+
+.producto7 {
+    display: flex;
+    margin: 15px 15px 15px 30px;
+}
+
+.producto7 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 14;
+}
+
+.producto8 {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+}
+
+.producto8 img {
+    object-fit: cover;
+}
+
+.caja-fundas .producto9 {
+    grid-column: 3 / 4;
+    grid-row: 9 / 13;
+}
+
+.producto9 {
+    display: flex;
+    margin: 15px 30px 15px 15px;
+}
+
+.producto9 img {
+    object-fit: cover;
+}*/
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA ESPEJOS+++*/
+
+/*.caja-espejos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 120px);
+}
+
+.caja-espejos img {
+    width: 100%;
+}
+
+.caja-espejos .producto1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.caja-espejos .producto2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+}
+
+.caja-espejos .producto3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.caja-espejos .producto4 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 9;
+}
+
+.caja-espejos .producto5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+}
+
+.caja-espejos .producto6 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 9;
+}
+
+.caja-espejos .producto7 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 13;
+}
+
+.caja-espejos .producto8 {
+    grid-column: 2 / 3;
+    grid-row: 10 / 15;
+}
+*/
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*+++PÁGINA CONTÁCTAME+++*/
+
+/*.caja-principal {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    background-image: url(../assets/img/banners/banner-2.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 100%;
+    margin: 50px 0px 100px 0px;
+}
+
+.items {
+    background-color: rgba(130, 104, 25, 0.5);
+    display: grid;
+    width: 100%;
+    height: 650px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.caja-contacto fieldset {
+    width: 100%;
+}
+
+.titulo {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.correo {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.caja-contacto {
+    grid-column: 2/4;
+    grid-row: 4/8;
+    width: 100%;
+}
+
+.boton-enviar {
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.formulario textarea {
+    width: 100%;
+}
+
+.items h1 {
+    margin-top: 50px;
+    font-family: "Gideon Roman", serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.items h2 {
+    font-family: "Gideon Roman", serif;
+    font-size: 20px;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 50px;
+}*/
+
+/*@media (max-width: 1024px) {
+    .productos {
+        height: 550px;
+    }
+
+    .cajas-productos {
+        height: 350px;
+    }
+
+    .retratos {
+        height: 350px;
+    }
+
+    .espejos {
+        height: 350px;
+    }
+
+    .fundas {
+        height: 350px;
+    }
+
+    .tarjeteros {
+        height: 350px;
+    }
+
+    .tiktok {
+        height: 750px;
+    }
+
+    .caja-tiktok {
+        height: 500px;
+    }
+
+    .tt1 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
+
+    .tt2 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
+
+    .tt3 .tiktok-embed {
+        grid-template-columns: 320px;
+        height: 520px;
+    }
+
+    .caja-compartir {
+        width: 100%;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .fondo-blanco {
+        grid-column: 3/9;
+    }
+}*/
+
+/*@media (max-width: 768px) {
+
+    +++INDEX+++
+    .elementos-nav a {
+        font-size: 15px;
+    }
+
+    .titulo-nav {
+        font-size: 40px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-inner {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 550px;
+    }
+
+    .productos {
+        height: 430px;
+    }
+
+    .titulo-productos h2 {
+        font-size: 40px;
+    }
+
+    .cajas-productos {
+        height: 300px;
+        grid-template-rows: 300px;
+    }
+
+    .retratos {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img1 {
+        grid-row: 1/3;
+    }
+
+    .titulo1 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .espejos {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img2 {
+        grid-row: 1/3;
+    }
+
+    .titulo2 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .fundas {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img3 {
+        grid-row: 1/3;
+    }
+
+    .titulo3 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .tarjeteros {
+        grid-template-rows: 130px 130px;
+    }
+
+    .img4 {
+        grid-row: 1/3;
+    }
+
+    .titulo4 {
+        grid-row: 2/3;
+        align-content: flex-end;
+        background-color: rgba(220, 224, 228, 0);
+    }
+
+    .titulo-tiktok h2 {
+        font-size: 40px;
+    }
+
+    .caja-compartir {
+        grid-template-rows: repeat(6, 1fr);
+        height: 450px;
+        background-size: contain;
+        margin: 0;
+    }
+
+    .fondo-blanco {
+        grid-row: 2/5;
+    }
+
+    +++CHROMATICA +++
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 60px;
+        margin-right: 30px;
+    }
+
+    .foto-sobre-mi img {
+        height: 500px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 40px;
+    }
+
+    .sobre-mi p {
+        font-size: 15px;
+    }
+
+    .sobre-mi-texto {
+        margin: 60px;
+        margin-left: 30px;
+    }
+
+    .foto-chromatica {
+        margin: 60px;
+        margin-left: 30px;
+    }
+
+    .chromatica-texto {
+        margin: 60px;
+        margin-right: 30px;
+    }
+
+    +++FUNDAS+++
+    .caja-fundas {
+        height: 1200px;
+        grid-template-rows: repeat(8, 120px);
+    }
+
+    .caja-fundas .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 4/7;
+    }
+
+    .caja-fundas .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .caja-fundas .producto6 {
+        grid-column: 3/4;
+        grid-row: 4/7;
+    }
+
+    .caja-fundas .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 7/10;
+    }
+
+    .caja-fundas .producto8 {
+        grid-column: 2/3;
+        grid-row: 8/11;
+    }
+
+    .caja-fundas .producto9 {
+        grid-column: 3/4;
+        grid-row: 7/10;
+    }
+
+    .producto1 img {
+        height: 350px;
+    }
+
+    .producto2 img {
+        height: 350px;
+        margin-top: -20px;
+    }
+
+    .producto3 img {
+        height: 350px;
+    }
+
+    .producto4 img {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .producto5 img {
+        height: 350px;
+    }
+
+    .producto6 img {
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .producto7 img {
+        height: 350px;
+        margin-top: 45px;
+    }
+
+    .producto8 img {
+        height: 350px;
+        margin-top: 15px;
+    }
+
+    .producto9 img {
+        height: 350px;
+        margin-top: 45px;
+    }
+
+    +++ESPEJOS+++
+    .caja-espejos {
+        height: 1200px;
+        grid-template-rows: repeat(8, 120px);
+    }
+
+    .caja-espejos .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 4/7;
+    }
+
+    .caja-espejos .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .caja-espejos .producto6 {
+        grid-column: 3/4;
+        grid-row: 4/7;
+    }
+
+    .caja-espejos .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 7/10;
+    }
+
+    .caja-espejos .producto8 {
+        grid-column: 2/3;
+        grid-row: 8/11;
+    }
+
+    .caja-espejos .producto9 {
+        grid-column: 3/4;
+        grid-row: 7/10;
+    }
+
+    +++CONTACTAME+++
+
+    .caja-principal {
+        height: 500px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .items {
+        height: 500px;
+    }
+
+    .items h1 {
+        margin-top: 30px;
+        font-family: "Gideon Roman", serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .items h2 {
+        font-family: "Gideon Roman", serif;
+        font-size: 18px;
+        text-align: center;
+        align-self: flex-start;
+        margin-top: 20px;
+    }
+
+    .formulario {
+        margin-top: -50px;
+    }
+}*/
+
+@media (max-width: 390px) {
+  /*+++INDEX+++
+    .elementos-nav a {
+        font-size: 9px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    .elementos-nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .titulo-nav {
+        font-size: 20px;
+        padding: 20px 0px 10px 0px;
+        letter-spacing: 4px;
+        justify-content: space-between;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        height: 200px;
+        margin-bottom: 50px;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .titulo-productos h2 {
+        font-size: 20px;
+    }
+
+    .cajas-productos {
+        height: 120px;
+        grid-template-rows: 120px;
+        padding: 0px 10px;
+        gap: .625rem;
+    }
+
+    .retratos {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img1 {
+        grid-row: 1/3;
+    }
+
+    .titulo1 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .retratos h1 {
+        font-size: 15px;
+    }
+
+    .espejos {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img2 {
+        grid-row: 1/3;
+    }
+
+    .titulo2 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .espejos h1 {
+        font-size: 15px;
+    }
+
+    .fundas {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img3 {
+        grid-row: 1/3;
+    }
+
+    .titulo3 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .fundas h1 {
+        font-size: 15px;
+    }
+
+    .tarjeteros {
+        grid-template-rows: 60px 60px;
+    }
+
+    .img4 {
+        grid-row: 1/3;
+    }
+
+    .titulo4 {
+        grid-row: 1/3;
+        align-content: flex-end;
+    }
+
+    .tarjeteros h1 {
+        font-size: 15px;
+    }
+
+    .tiktok {
+        height: 250px;
+        margin-bottom: 100px;
+    }
+
+    .caja-tiktok {
+        height: 250px;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+    .titulo-tiktok h2 {
+        font-size: 20px;
+    }
+
+    .tiktok-embed {
+        width: 100px;
+    }
+
+    .tt1 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .tt2 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .tt3 .tiktok-embed {
+        height: 250px;
+        grid-template-columns: 100px;
+    }
+
+    .caja-compartir {
+        grid-template-rows: repeat(10, 1fr);
+        height: 250px;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+
+    .fondo-blanco {
+        grid-row: 4/8;
+        gap: 5px;
+    }
+
+    .obj1 {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .obj2 {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 13px;
+    }
+
+    .obj3 {
+        padding: 2px;
+        background-color: #E98270;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .obj3 img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .boton-ig {
+        font-family: "Gideon Roman", serif;
+        font-size: 10px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+
+    .logos img {
+        padding: 5px;
+        width: 40px;
+    }
+
+    .logos {
+        justify-items: space-around;
+    }
+
+    .logos a {
+        width: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    +++CHROMATICA+++
+
+    .sobre-mi {
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: -30px;
+        height: 500px;
+    }
+
+    .sobre-mi .chromatica-texto {
+        grid-column: 1 / 2;
+        grid-row: 5 / 8;
+    }
+
+    .sobre-mi .foto-chromatica {
+        grid-column: 2 / 3;
+        grid-row: 5/8;
+    }
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 25px;
+        margin-right: 12.5px;
+    }
+
+    .foto-sobre-mi img {
+        height: 250px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 20px;
+    }
+
+    .sobre-mi p {
+        font-size: 8px;
+    }
+
+    .sobre-mi-texto {
+        margin: 25px;
+        margin-left: 12.5px;
+        height: 220px;
+    }
+
+    .foto-chromatica {
+        margin: 25px;
+        margin-left: 12.5px;
+        height: 250px;
+    }
+
+    .chromatica-texto {
+        margin: 25px;
+        margin-top: 40px;
+        margin-right: 12.5px;
+    }
+
+    +++FUNDAS+++
+
+    .caja-fundas {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+    }
+
+    .caja-fundas .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 2/4;
+    }
+
+    .caja-fundas .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 3/5;
+    }
+
+    .caja-fundas .producto6 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .caja-fundas .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 3/5;
+    }
+
+    .caja-fundas .producto8 {
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+    .caja-fundas .producto9 {
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+
+    .producto1 img {
+        height: 150px;
+    }
+
+    .producto2 img {
+        height: 150px;
+        margin-top: -45px;
+    }
+
+    .producto3 img {
+        height: 150px;
+    }
+
+    .producto4 img {
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    .producto5 img {
+        height: 150px;
+    }
+
+    .producto6 img {
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    .producto7 img {
+        height: 150px;
+        margin-top: 105px;
+    }
+
+    .producto8 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto9 img {
+        height: 150px;
+        margin-top: 105px;
+    }
+
+    +++ESPEJOS+++
+
+    .caja-espejos {
+        height: 600px;
+        grid-template-rows: repeat(5, 120px);
+        margin-bottom: 0;
+        margin-top: -30px;
+    }
+
+    .caja-espejos .producto4 {
+        grid-column: 1 / 2;
+        grid-row: 2/4;
+    }
+
+    .caja-espejos .producto5 {
+        grid-column: 2 / 3;
+        grid-row: 3/5;
+    }
+
+    .caja-espejos .producto6 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .caja-espejos .producto7 {
+        grid-column: 1 / 2;
+        grid-row: 3/5;
+    }
+
+    .caja-espejos .producto8 {
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+        +++CONTACTAME+++
+
+        .caja-principal {
+            height: 250px;
+            margin: 0;
+            margin-bottom:60px;
+        }
+    
+        .items {
+            height: 250px;
+        }
+    
+        .items h1 {
+            margin-top: 15px;
+            font-family: "Gideon Roman", serif;
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        .items h2 {
+            font-family: "Gideon Roman", serif;
+            font-size: 10px;
+            text-align: center;
+            align-self: flex-start;
+            margin-top: 0;
+        }
+    
+        .formulario {
+            margin-top: -50px;
+            height: 100px;
+        }*/
+}
+
+@media (max-width: 320px) {
+  /*+++INDEX+++
+    .elementos-nav ul {
+        justify-content: center;
+    }
+
+    .elementos-nav a {
+        font-size: 8px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    +++CHROMATICA+++
+    .sobre-mi {
+        grid-template-rows: repeat(8, 1fr);
+        margin-top: -25px;
+        height: 500px;
+        margin-bottom: -35px;
+    }
+
+    .sobre-mi .chromatica-texto {
+        grid-column: 1 / 2;
+        grid-row: 4 / 8;
+    }
+
+    .sobre-mi .foto-chromatica {
+        grid-column: 2 / 3;
+        grid-row: 4/8;
+    }
+
+    .foto-sobre-mi {
+        display: flex;
+        margin: 15px;
+        margin-right: 12.5px;
+    }
+
+    .foto-sobre-mi img {
+        height: 200px;
+    }
+
+    .sobre-mi h2 {
+        font-size: 18px;
+    }
+
+    .sobre-mi p {
+        font-size: 6px;
+    }
+
+    .sobre-mi-texto {
+        margin: 15px;
+        margin-left: 12.5px;
+        height: 180px;
+    }
+
+    .foto-chromatica {
+        margin: 15px;
+        margin-left: 12.5px;
+        height: 200px;
+    }
+
+    .chromatica-texto {
+        margin: 15px;
+        margin-right: 12.5px;
+    }
+
+    +++FUNDAS+++
+    .producto1 img {
+        height: 150px;
+    }
+
+    .producto1 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto2 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto3 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto4 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto5 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto6 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto7 {
+        margin: 15px;
+        margin-right: 7.5px;
+    }
+
+    .producto8 {
+        margin: 15px;
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .producto9 {
+        margin: 15px;
+        margin-left: 7.5px;
+    }
+
+    .producto2 img {
+        height: 150px;
+        margin-top: -60px;
+    }
+
+    .producto3 img {
+        height: 150px;
+    }
+
+    .producto4 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto5 img {
+        height: 150px;
+        margin-top: -15px;
+    }
+
+    .producto6 img {
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .producto7 img {
+        height: 150px;
+        margin-top: 90px;
+    }
+
+    .producto8 img {
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .producto9 img {
+        height: 150px;
+        margin-top: 90px;
+    } */
+}
