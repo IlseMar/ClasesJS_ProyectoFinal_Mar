@@ -37,6 +37,10 @@ const renderProducts = (arrayProductos) => {
         <input type="number" min="1" value="1" class="quantity-input" />
         <button onclick="agregarAlCarrito(${producto.id}, ${index})" class="add-cart-btn">Agregar al carrito</button>
       </div>`;
+    // CONSTRUIR UN INPUT PERSONALIZABLE DONDE EL USUARIO INTRODUZCA EL MODELO DE SU CELULAR
+    //Una sola pagina de productos
+    // Cada producto tiene una tarjeta
+    // https://www.instacase.mx/
 
     containerProducts.appendChild(productCard);
 

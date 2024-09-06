@@ -45,163 +45,52 @@ nav ul {
 a:hover {
   text-decoration: underline; }
 
-.productos {
-  width: 100%;
-  height: 650px;
-  background-color: #9b141b;
-  margin-bottom: 50px;
-  display: grid;
-  gap: 0;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
-  align-items: center;
-  justify-items: center;
-  grid-template-areas: "titulo-productos" "cajas-productos"; }
-  .productos .titulo-productos h2 {
-    text-align: center;
-    font-family: "Gideon Roman", serif;
-    font-size: 50px; }
+.titulo-productos h2 {
+  text-align: center;
+  font-family: "Gideon Roman", serif;
+  font-size: 50px; }
 
-.cajas-productos {
+.custom-card {
   width: 100%;
   height: 400px;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px;
-  align-items: none;
-  justify-items: none;
-  grid-template-areas: "retratos espejos fundas tarjeteros";
-  align-self: self-start;
-  padding-left: 30px;
-  padding-right: 30px; }
-  .cajas-productos .retratos {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 20px;
-    object-fit: cover; }
-    .cajas-productos .retratos .titulo1 {
-      grid-column: 1/2;
-      grid-row: 3/5;
-      order: 2;
-      background-color: rgba(220, 224, 228, 0.5);
-      overflow: hidden;
-      text-align: center;
-      font-family: "Gideon Roman", serif;
-      font-size: 20px;
-      overflow: hidden; }
-    .cajas-productos .retratos .img1 {
-      border-radius: 18% 5%;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 5;
-      order: 1;
-      overflow: hidden; }
-    .cajas-productos .retratos .img1:hover {
-      transform: scale(1.1); }
+  position: relative;
+  /* Para poder posicionar el título dentro de la tarjeta */
+  overflow: hidden; }
 
-.espejos {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 20px;
-  object-fit: cover; }
-  .espejos .titulo2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    order: 2;
-    grid-column: 1/2;
-    grid-row: 3/5;
-    order: 2;
-    background-color: rgba(220, 224, 228, 0.5);
-    overflow: hidden;
-    text-align: center;
-    font-family: "Gideon Roman", serif;
-    font-size: 20px; }
-  .espejos .img2 {
-    border-radius: 18% 5%;
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    order: 1;
-    overflow: hidden;
-    object-fit: cover; }
-  .espejos .img2:hover {
-    transform: scale(1.1); }
+.col {
+  flex: 1 0 calc(25% - 1rem);
+  /* Ajusta el tamaño de las columnas */ }
 
-.fundas {
-  display: grid;
-  height: 100%;
+.custom-card img {
   width: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 20px;
+  height: 100%;
   object-fit: cover; }
-  .fundas .titulo3 {
-    grid-column: 1/2;
-    grid-row: 3/5;
-    order: 2;
-    background-color: rgba(220, 224, 228, 0.5);
-    overflow: hidden;
-    text-align: center;
-    font-family: "Gideon Roman", serif;
-    font-size: 20px; }
-  .fundas .img3 {
-    border-radius: 18% 5%;
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    order: 1;
-    object-fit: cover; }
-  .fundas .img3:hover {
-    transform: scale(1.1); }
 
-.tarjeteros {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 20px;
-  object-fit: cover; }
-  .tarjeteros .titulo4 {
-    grid-column: 1/2;
-    grid-row: 3/5;
-    order: 2;
-    background-color: rgba(220, 224, 228, 0.5);
-    overflow: hidden;
-    text-align: center;
-    font-family: "Gideon Roman", serif;
-    font-size: 20px; }
-  .tarjeteros .img4 {
-    border-radius: 18% 5%;
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    order: 1;
-    object-fit: cover; }
-  .tarjeteros .img4:hover {
-    transform: scale(1.1); }
+.card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-family: "Gideon Roman", serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  background-color: rgba(0, 0, 0, 0.397);
+  margin: 0;
+  padding: 5px; }
+
+.row {
+  width: 100vw;
+  justify-content: center;
+  justify-items: center; }
 
 /*-----------------------------------------------*/
 /*seccion tiktok*/
 .tiktok {
   width: 100%;
   height: 780px;
-  background-color: #33997b;
+  background-color: #ffffff;
   margin-bottom: 50px;
   display: grid;
   gap: 0;
