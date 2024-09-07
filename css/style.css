@@ -54,12 +54,16 @@ a:hover {
   width: 100%;
   height: 400px;
   position: relative;
-  /* Para poder posicionar el título dentro de la tarjeta */
   overflow: hidden; }
 
+.custom-card:hover {
+  transform: scale(1.1); }
+
+.custom-shadow {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.568); }
+
 .col {
-  flex: 1 0 calc(25% - 1rem);
-  /* Ajusta el tamaño de las columnas */ }
+  flex: 1 0 calc(25% - 1rem); }
 
 .custom-card img {
   width: 100%;
@@ -106,7 +110,7 @@ a:hover {
       font-size: 50px; }
   .tiktok .caja-tiktok {
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,7 +135,8 @@ a:hover {
         margin: 0;
         padding: 0;
         border-radius: 10%;
-        justify-content: center; }
+        justify-content: center;
+        object-fit: cover; }
     .tiktok .caja-tiktok .tt2 {
       width: 100%;
       height: 100%; }
@@ -231,61 +236,74 @@ a:hover {
 /*-----------------------------------------------*/
 /*+++PÁGINA CHROMÁTICA+++*/
 .sobre-mi {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(10, 1fr); }
-  .sobre-mi img {
-    width: 100%;
-    object-fit: cover; }
-  .sobre-mi .sobre-mi-texto {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    grid-column: 2 / 3;
-    grid-row: 1 / 6;
-    display: flex;
-    margin: 80px;
-    flex-direction: column;
-    margin-left: 40px; }
-    .sobre-mi .sobre-mi-texto h2 {
-      font-family: "Luxurious Roman", serif;
-      font-size: 50px; }
-    .sobre-mi .sobre-mi-texto p {
-      font-family: "Luxurious Roman", serif;
-      font-size: 20px; }
-  .sobre-mi .foto-sobre-mi {
-    grid-column: 1 / 2;
-    grid-row: 1 /7;
-    display: flex;
-    margin: 80px;
-    margin-right: 40px;
-    object-fit: cover; }
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 600px; }
+  .sobre-mi .sobre-mi-texto,
   .sobre-mi .chromatica-texto {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1 / 2;
-    grid-row: 6 / 11;
-    display: flex;
-    flex-direction: column;
-    margin: 80px;
-    margin-right: 40px; }
-    .sobre-mi .chromatica-texto h2 {
-      font-family: "Luxurious Roman", serif;
-      font-size: 50px; }
-    .sobre-mi .chromatica-texto p {
-      font-family: "Luxurious Roman", serif;
-      font-size: 20px; }
+    position: relative;
+    width: 400px;
+    perspective: 1000px; }
+    .sobre-mi .sobre-mi-texto .card1,
+    .sobre-mi .chromatica-texto .card1 {
+      width: 100%;
+      height: 450px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px #000; }
+      .sobre-mi .sobre-mi-texto .card1:hover,
+      .sobre-mi .chromatica-texto .card1:hover {
+        transform: rotateY(180deg); }
+      .sobre-mi .sobre-mi-texto .card1 .card-front,
+      .sobre-mi .sobre-mi-texto .card1 .card-back,
+      .sobre-mi .chromatica-texto .card1 .card-front,
+      .sobre-mi .chromatica-texto .card1 .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        /* Safari */ }
+      .sobre-mi .sobre-mi-texto .card1 .card-front img,
+      .sobre-mi .chromatica-texto .card1 .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px; }
+      .sobre-mi .sobre-mi-texto .card1 .card-back,
+      .sobre-mi .chromatica-texto .card1 .card-back {
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px; }
+        .sobre-mi .sobre-mi-texto .card1 .card-back h2,
+        .sobre-mi .chromatica-texto .card1 .card-back h2 {
+          margin: 0;
+          font-size: 1.5em; }
+        .sobre-mi .sobre-mi-texto .card1 .card-back p,
+        .sobre-mi .chromatica-texto .card1 .card-back p {
+          margin-top: 10px;
+          font-size: 1em;
+          line-height: 1.5; }
+  .sobre-mi .foto-sobre-mi,
   .sobre-mi .foto-chromatica {
-    grid-column: 2 / 3;
-    grid-row: 5 / 11;
-    display: flex;
-    margin: 80px;
-    margin-left: 40px;
-    margin-left: 40px; }
+    width: 400px;
+    perspective: 1000px; }
+    .sobre-mi .foto-sobre-mi .card-front img,
+    .sobre-mi .foto-chromatica .card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px; }
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/

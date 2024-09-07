@@ -16,12 +16,20 @@ a:hover {
 .custom-card {
   width: 100%;
   height: 400px;
-  position: relative; /* Para poder posicionar el título dentro de la tarjeta */
+  position: relative;
   overflow: hidden;
 }
 
+.custom-card:hover {
+  transform: scale(1.1);
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.568);
+}
+
 .col {
-  flex: 1 0 calc(25% - 1rem); /* Ajusta el tamaño de las columnas */
+  flex: 1 0 calc(25% - 1rem);
 }
 
 .custom-card img {
@@ -52,180 +60,6 @@ a:hover {
   justify-items: center;
 }
 
-// .productos {
-//   width: 100%;
-//   height: 650px;
-//   background-color: #ffffff;
-//   margin-bottom: 50px;
-//   @include grid(
-//     0,
-//     100%,
-//     20% 80%,
-//     center,
-//     center,
-//     "titulo-productos" "cajas-productos"
-//   );
-//   .titulo-productos {
-//     h2 {
-//       text-align: center;
-//       font-family: "Gideon Roman", serif;
-//       font-size: 50px;
-//     }
-//   }
-// }
-
-// .cajas-productos {
-//   width: 100%;
-//   height: 400px;
-//   @include grid(
-//     30px,
-//     1fr 1fr 1fr 1fr,
-//     400px,
-//     none,
-//     none,
-//     "retratos espejos fundas tarjeteros"
-//   );
-//   align-self: self-start;
-//   padding-left: 30px;
-//   padding-right: 30px;
-//   .retratos {
-//     height: 100%;
-//     width: 100%;
-//     display: grid;
-//     grid-template-columns: 100%;
-//     grid-template-rows: 1fr 1fr 20px;
-//     object-fit: cover;
-//     .titulo1 {
-//       grid-column: 1/2;
-//       grid-row: 3/5;
-//       order: 2;
-//       background-color: rgba(220, 224, 228, 0.5);
-//       overflow: hidden;
-//       text-align: center;
-//       font-family: "Gideon Roman", serif;
-//       font-size: 20px;
-//       overflow: hidden;
-//     }
-//     .img1 {
-//       border-radius: 18% 5%;
-//       width: 100%;
-//       height: 100%;
-//       grid-column-start: 1;
-//       grid-column-end: 2;
-//       grid-row-start: 1;
-//       grid-row-end: 5;
-//       order: 1;
-//       overflow: hidden;
-//     }
-//     .img1:hover {
-//       transform: scale(1.1);
-//     }
-//   }
-// }
-
-// .espejos {
-//   display: grid;
-//   height: 100%;
-//   width: 100%;
-//   grid-template-columns: 100%;
-//   grid-template-rows: 1fr 1fr 20px;
-//   object-fit: cover;
-//   .titulo2 {
-//     grid-column: 1/2;
-//     grid-row: 2/3;
-//     order: 2;
-//     grid-column: 1/2;
-//     grid-row: 3/5;
-//     order: 2;
-//     background-color: rgba(220, 224, 228, 0.5);
-//     overflow: hidden;
-//     text-align: center;
-//     font-family: "Gideon Roman", serif;
-//     font-size: 20px;
-//   }
-//   .img2 {
-//     border-radius: 18% 5%;
-//     width: 100%;
-//     height: 100%;
-//     grid-column-start: 1;
-//     grid-column-end: 2;
-//     grid-row-start: 1;
-//     grid-row-end: 5;
-//     order: 1;
-//     overflow: hidden;
-//     object-fit: cover;
-//   }
-//   .img2:hover {
-//     transform: scale(1.1);
-//   }
-// }
-
-// .fundas {
-//   display: grid;
-//   height: 100%;
-//   width: 100%;
-//   grid-template-columns: 100%;
-//   grid-template-rows: 1fr 1fr 20px;
-//   object-fit: cover;
-//   .titulo3 {
-//     grid-column: 1/2;
-//     grid-row: 3/5;
-//     order: 2;
-//     background-color: rgba(220, 224, 228, 0.5);
-//     overflow: hidden;
-//     text-align: center;
-//     font-family: "Gideon Roman", serif;
-//     font-size: 20px;
-//   }
-//   .img3 {
-//     border-radius: 18% 5%;
-//     width: 100%;
-//     height: 100%;
-//     grid-column-start: 1;
-//     grid-column-end: 2;
-//     grid-row-start: 1;
-//     grid-row-end: 5;
-//     order: 1;
-//     object-fit: cover;
-//   }
-//   .img3:hover {
-//     transform: scale(1.1);
-//   }
-// }
-
-// .tarjeteros {
-//   display: grid;
-//   height: 100%;
-//   width: 100%;
-//   grid-template-columns: 100%;
-//   grid-template-rows: 1fr 1fr 20px;
-//   object-fit: cover;
-//   .titulo4 {
-//     grid-column: 1/2;
-//     grid-row: 3/5;
-//     order: 2;
-//     background-color: rgba(220, 224, 228, 0.5);
-//     overflow: hidden;
-//     text-align: center;
-//     font-family: "Gideon Roman", serif;
-//     font-size: 20px;
-//   }
-//   .img4 {
-//     border-radius: 18% 5%;
-//     width: 100%;
-//     height: 100%;
-//     grid-column-start: 1;
-//     grid-column-end: 2;
-//     grid-row-start: 1;
-//     grid-row-end: 5;
-//     order: 1;
-//     object-fit: cover;
-//   }
-//   .img4:hover {
-//     transform: scale(1.1);
-//   }
-// }
-
 /*-----------------------------------------------*/
 /*seccion tiktok*/
 
@@ -251,7 +85,7 @@ a:hover {
   }
   .caja-tiktok {
     width: 100%;
-    height: 600px;
+    height: 500px;
     @include grid(30px, 1fr 1fr 1fr, 240, center, center, "tt1 tt2 tt3");
     align-self: self-start;
     justify-content: center;
@@ -271,6 +105,7 @@ a:hover {
         padding: 0;
         border-radius: 10%;
         justify-content: center;
+        object-fit: cover;
       }
     }
     .tt2 {
@@ -392,71 +227,179 @@ a:hover {
 /*+++PÁGINA CHROMÁTICA+++*/
 
 .sobre-mi {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 50px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(10, 1fr);
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-  .sobre-mi-texto {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    grid-column: 2 / 3;
-    grid-row: 1 / 6;
-    display: flex;
-    margin: 80px;
-    flex-direction: column;
-    margin-left: 40px;
-    h2 {
-      font-family: "Luxurious Roman", serif;
-      font-size: 50px;
-    }
-    p {
-      font-family: "Luxurious Roman", serif;
-      font-size: 20px;
-    }
-  }
-  .foto-sobre-mi {
-    grid-column: 1 / 2;
-    grid-row: 1 /7;
-    display: flex;
-    margin: 80px;
-    margin-right: 40px;
-    object-fit: cover;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 600px;
+
+  .sobre-mi-texto,
   .chromatica-texto {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1 / 2;
-    grid-row: 6 / 11;
-    display: flex;
-    flex-direction: column;
-    margin: 80px;
-    margin-right: 40px;
-    h2 {
-      font-family: "Luxurious Roman", serif;
-      font-size: 50px;
-    }
-    p {
-      font-family: "Luxurious Roman", serif;
-      font-size: 20px;
+    position: relative;
+    width: 400px;
+    perspective: 1000px;
+    .card1 {
+      width: 100%;
+      height: 450px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px #000;
+
+      &:hover {
+        transform: rotateY(180deg);
+      }
+
+      .card-front,
+      .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden; /* Safari */
+      }
+
+      .card-front {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .card-back {
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+
+        h2 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 1em;
+          line-height: 1.5;
+        }
+      }
     }
   }
+
+  .foto-sobre-mi,
   .foto-chromatica {
-    grid-column: 2 / 3;
-    grid-row: 5 / 11;
-    display: flex;
-    margin: 80px;
-    margin-left: 40px;
-    margin-left: 40px;
+    width: 400px;
+    perspective: 1000px;
+
+    .card-front {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
   }
 }
+
+// .card1 {
+//   position: relative;
+//   width: 300px;
+//   height: 350px;
+//   .face {
+//     position: absolute;
+//     width: 100%;
+//     backface-visibility: hidden;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     transition: 0.5s;
+//   }
+//   .front {
+//     transform: perspective(600px) rotateY(0deg);
+//     box-shadow: 0 5px 10px #000;
+//     img {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }
+
+// .sobre-mi {
+//   display: grid;
+//   width: 100%;
+//   height: 100%;
+//   margin-bottom: 50px;
+//   grid-template-columns: 50% 50%;
+//   grid-template-rows: repeat(10, 1fr);
+//   img {
+//     width: 100%;
+//     object-fit: cover;
+//   }
+//   .sobre-mi-texto {
+//     text-align: center;
+//     justify-content: center;
+//     align-content: center;
+//     grid-column: 2 / 3;
+//     grid-row: 1 / 6;
+//     display: flex;
+//     margin: 80px;
+//     flex-direction: column;
+//     margin-left: 40px;
+//     h2 {
+//       font-family: "Luxurious Roman", serif;
+//       font-size: 50px;
+//     }
+//     p {
+//       font-family: "Luxurious Roman", serif;
+//       font-size: 20px;
+//     }
+//   }
+//   .foto-sobre-mi {
+//     grid-column: 1 / 2;
+//     grid-row: 1 /7;
+//     display: flex;
+//     margin: 80px;
+//     margin-right: 40px;
+//     object-fit: cover;
+//   }
+//   .chromatica-texto {
+//     text-align: center;
+//     justify-content: center;
+//     align-content: center;
+//     grid-column: 1 / 2;
+//     grid-row: 6 / 11;
+//     display: flex;
+//     flex-direction: column;
+//     margin: 80px;
+//     margin-right: 40px;
+//     h2 {
+//       font-family: "Luxurious Roman", serif;
+//       font-size: 50px;
+//     }
+//     p {
+//       font-family: "Luxurious Roman", serif;
+//       font-size: 20px;
+//     }
+//   }
+//   .foto-chromatica {
+//     grid-column: 2 / 3;
+//     grid-row: 5 / 11;
+//     display: flex;
+//     margin: 80px;
+//     margin-left: 40px;
+//     margin-left: 40px;
+//   }
+// }
 
 /*-----------------------------------------------*/
 /*-----------------------------------------------*/

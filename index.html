@@ -126,7 +126,7 @@
               class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center"
             >
               <div class="col">
-                <div class="card custom-card">
+                <div class="card custom-card custom-shadow">
                   <img
                     src="./assets/img/canvas/canva-4.png"
                     class="card-img-top"
@@ -136,7 +136,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card custom-card">
+                <div class="card custom-card custom-shadow">
                   <a class="img2" href="./pages/espejos.html">
                     <img
                       src="./assets/img/espejos/espejos-1.jpeg"
@@ -148,7 +148,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card custom-card">
+                <div class="card custom-card custom-shadow">
                   <a class="img3" href="./pages/fundas.html">
                     <img
                       src="./assets/img/fundas/funda-1.jpeg"
@@ -160,7 +160,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card custom-card">
+                <div class="card custom-card custom-shadow">
                   <img
                     src="./assets/img/tarjeteros/tarjetero-1.jpeg"
                     class="card-img-top"
@@ -173,6 +173,7 @@
           </div>
         </div>
       </section>
+
       <section class="tiktok">
         <div class="titulo-tiktok">
           <h2 class="tiktok-titulo">TikTok</h2>
@@ -183,7 +184,7 @@
               class="tiktok-embed"
               cite="https://www.tiktok.com/@chromati.ca/video/7347371493220764934"
               data-video-id="7347371493220764934"
-              style="max-width: 37.8125rem; min-width: 20.3125rem"
+              style="max-width: 605px; min-width: 325px"
             >
               <section>
                 <a
@@ -348,6 +349,24 @@
               </section>
             </blockquote>
             <script async src="https://www.tiktok.com/embed.js"></script>
+            <script>
+              window.addEventListener("scroll", function () {
+                var tiktokEmbeds = document.querySelectorAll(
+                  ".tiktok-embed iframe"
+                );
+
+                tiktokEmbeds.forEach(function (embed) {
+                  // Reproducir automáticamente si es visible en la pantalla
+                  if (
+                    embed.getBoundingClientRect().top < window.innerHeight &&
+                    embed.getBoundingClientRect().bottom > 0
+                  ) {
+                    // Simula la reproducción si es visible
+                    // Este paso depende del soporte del iframe y el comportamiento nativo de TikTok
+                  }
+                });
+              });
+            </script>
           </article>
           <article class="tt3">
             <blockquote
